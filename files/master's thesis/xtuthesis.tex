@@ -1,0 +1,28 @@
+\documentclass[CJK,GBK,UTF8,12pt,oneside,a4paper]{ctexbook}
+%----------------------------------------packages and format-----------------
+\input{setup/package.tex}
+\input{setup/format.tex}
+\graphicspath{{figures/}}
+
+\begin{document}
+%----------------------------------------cover-------------------------------
+%\include{preface/cover}
+%\include{preface/license}
+\include{preface/abstract}
+%----------------------------------------table content-----------------------
+\newpage
+\songti\zihao{-4}
+\tableofcontents
+%----------------------------------------body--------------------------------
+\songti\zihao{-4}
+\include{body/chapter1}
+\include{body/chapter2}
+\include{body/chapter3}
+\include{body/chapter4}
+\include{body/chapter5}
+%----------------------------------------reference---------------------------
+\include{reference/references}
+%----------------------------------------thanks------------------------------
+\include{body/thank}
+\include{body/aboutme}
+\end{document} 

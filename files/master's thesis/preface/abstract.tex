@@ -1,0 +1,62 @@
+﻿%----摘要----------------------------------------------------------------------------------------
+\pagestyle{plain}
+\pagenumbering{Roman}
+\begin{cnabstract}
+
+混沌系统被广泛用于设计真随机数发生器、伪随机数发生器和安全保密通信算法。然而，在任何数字
+世界的应用中，各混沌系统的动力学性质因为有限精度效应必然在不同程度上退化。
+数字混沌动力学性质退化的“可知性”和“可控性”是攸关相关应用的基石。
+本文着重研究低维混沌映射在计算机数字域中实现时的动力学性质。以计算机中可表示的
+混沌状态值为点、以两点之间的映射关系（若存在）为边，建立混沌映射对应的状态映射网络
+(state-mapping network, SMN)。主要通过状态映射网络与实现精度之间的变化关系来研究对应混沌映射的退化过程。
+
+本文关于数字混沌系统动力学的研究涉及一维Logistic映射、Tent映射和二维Cat映射，研究内容和主要成果包括如下几个方面：
+\begin{itemize}
+\item[1.]
+对已有相关研究进行综述发现迭代混沌映射的SMN与实现精度之间的一般性质。严格证明了定点运算模式下Logistic映射的SMN的无标度属性，
+并分析了浮点运算模式对Logistic映射的具体影响，进而给出了这两种运算模式下Logistic映射状态映射网络之间的强相关关系。
+\item[2.]
+将分析对象扩展到Tent映射，通过与Logistic映射状态映射网络进行对比，阐明了映射本身性质对状态映射网络结构的影响。
+\item[3.]
+进一步研究二维Cat映射的状态映射网络随实现精度增大时的变化性质，厘清了二维Cat映射的周期分布与其状态映射网络结构之间的具体关系。
+\end{itemize}
+
+本文的研究成果有助于了解有限精度数字域中数字混沌系统的真实结构，从而促进数字混沌动力学退化的有效抵抗和准确评估。
+
+\end{cnabstract}
+
+\begin{cnkeywords}
+混沌映射；状态映射网络；动力学退化；伪随机数发生器；周期分布。
+\end{cnkeywords}
+%----Abstract------------------------------------------------------------------------------------
+\newpage
+\begin{enabstract}
+
+Chaotic systems are extensively used to design true random number generators, pseudo-random number generators and secure communication algorithms. However, in the digital world, the dynamic properties of the chaotic systems must be degraded to varying degrees due to the finite-precision effect. Understanding and controlling the dynamic properties are related to the basis of any chaos-related application. This thesis focuses on the dynamic properties of low-dimensional chaotic maps implemented in the digital domain. The state-mapping network corresponding to a chaotic map is established by the following way: every representable value in the definition domain of the chaotic map is
+considered as a node, while a directed edge between a pair of nodes is built if and only if the former node is
+mapped to the latter one by the chaotic map. Then, the dynamic degradation of the corresponding chaotic map was studied
+by the relationship between the state-mapping network (SMN) and implementation precision.
+
+The study on the dynamics of digital chaotic systems involves one-dimensional Logistic map, Tent map
+and two-dimensional Cat map. The main achievements contained in this thesis are as follows:
+\begin{itemize}
+\item[1.]
+First, we review the existing related studies of the topic and present some general properties between SMN and
+the implementation precision of iterative chaotic maps. Then, we prove the scale-free property of SMN of the Logistic map
+in fixed-point arithmetic domain and analyzes specific impact of floating-point operation mode on Logistic map.
+The strong correlation between the SMNs of Logistic map obtained with the two arithmetic mode is given.
+\item[2.]
+To further disclose the influence of the nature of chaotic map on the structure of SMN, we extends the analysis to Tent map
+and compare the differences of SMNs of the two chaotic map in the same arithmetic domain.
+\item[3.]
+Finally, we further study how SMN of two-dimensional Cat map change as increase of implementation precision and clarify
+the specific relationship between the cycle distribution of 2-D Cat map and the structure of its SMN.
+\end{itemize}
+
+The obtained results of this thesis are helpful to understand the real structure of digital chaotic system in the finite-precision arithmetic domain and may promote more effective resistance and accurate evaluation of the dynamical degradation of the digital chaotic systems.
+
+\end{enabstract}
+
+\begin{enkeywords}
+Chaotic map, state-mapping network, dynamics degradation, pseudo-random number generator, cycle distribution.
+\end{enkeywords} 
